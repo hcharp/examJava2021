@@ -14,17 +14,17 @@ public class CLIClassiqueTest {
 	@Test
 	public void testExempleSujet() {
 
-		Configuration c1 = new Configuration;
-		c1.setAlpha() = 0.9f;
-		c1.setEpsilon() = 1.0f;
-		c1.setIndice() = 30f;
-		c1.setMode() = CREUSE;
+		Configuration c1 = new Configuration();
+		c1.alpha = 0.9f;
+		c1.epsilon = 1.0f;
+		c1.indice = 30;
+		c1.mode = Mode.CREUSE;
 
-		Configuration c2 = new Configuration;
-		c2.setAlpha() = 0.9f
-		c2.setEpsilon() = 1.0f;
-		c2.setIndice() = 30f;
-		c2.setMode() = CREUSE;
+		Configuration c2 = new Configuration();
+		c2.alpha = 0.9f;
+		c2.epsilon = 1.0f;
+		c2.indice = 30;
+		c2.mode = Mode.CREUSE;
 
 		assertEquals(c1,c2);
 	

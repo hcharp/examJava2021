@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cli SYSTEM "cli.dtd">
+
+<cli>
+    <argument acces="E" nb="1">Valeur de epsilon</argument>
+    <argument acces="K" nb="0.4">Valeur de indice</argument>
+    <argument acces="P">Mode matrice pleine</argument>
+</cli>

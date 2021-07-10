@@ -1,4 +1,4 @@
-public class CLIClassique {
+public class CLIClassiqueOrigin {
 
 	public static Configuration configuration(String... args) {
 		Configuration config = new Configuration();
@@ -8,25 +8,13 @@ public class CLIClassique {
 			String arg = args[i];
 			switch (arg) {
 				case "-K": // Valeur de l'indice à calculer
-					try {
-						config.indice = Integer.parseInt(args[++i]);
-					} catch (Exception e) {
-						System.out.println("Pas le bon type.");
-					}
+					config.indice = Integer.parseInt(args[++i]);
 					break;
 				case "-E": // Valeur de la précision à atteindre
-				try {
 					config.epsilon = Double.parseDouble(args[++i]);
-				} catch (Exception e) {
-					System.out.println("Pas le bon type.");
-				}
 					break;
 				case "-A": // Valeur de alpha
-				try {
 					config.alpha = Double.parseDouble(args[++i]);
-				} catch (Exception e) {
-					System.out.println("Pas le bon type.");
-				}
 					break;
 				case "-C": // Mode matrice creuse
 					config.mode = Mode.CREUSE;

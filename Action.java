@@ -1,26 +1,26 @@
 public class Action {
 
-	public static void faire(acces, finOptions) {
+	public static void faire(Configuration config, String acces, Object valeur) {
 		
 
-		switch (arg) {
+		switch (acces) {
 			case "-K": // Valeur de l'indice à calculer
 				try {
-					config.indice = Integer.parseInt(args[++i]);
+					config.indice = (int)valeur;
 				} catch (Exception e) {
 					System.out.println("Pas le bon type.");
 				}
 				break;
 			case "-E": // Valeur de la précision à atteindre
 			try {
-				config.epsilon = Double.parseDouble(args[++i]);
+				config.epsilon = (double)valeur;
 			} catch (Exception e) {
 				System.out.println("Pas le bon type.");
 			}
 				break;
 			case "-A": // Valeur de alpha
 			try {
-				config.alpha = Double.parseDouble(args[++i]);
+				config.alpha = (double)valeur;
 			} catch (Exception e) {
 				System.out.println("Pas le bon type.");
 			}
@@ -32,10 +32,7 @@ public class Action {
 				config.mode = Mode.PLEINE;
 				break;
 			default:
-				finOptions = arg.length() == 0 || arg.charAt(0) != '-';
-				if (! finOptions) {
-					System.out.println("Option inconnue : " + arg);
-				}
+				System.out.println("Option inconnue : " + acces);
 		}
 
 	}	

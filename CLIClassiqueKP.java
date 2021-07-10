@@ -1,22 +1,27 @@
+import java.util.List;
+
 public class CLIClassiqueKP {
 
-	public Option[] options;
+	public List <Option> options;
 
-	public static ajouterOption(option) {
+	public void ajouterOption(Option option) {
 
 		options.add(option);
 
 	}
 
-	public static analyser(arguments) {
+	public static Configuration analyser(String ... arguments) {
 
 		Configuration config = new Configuration();
-		boolean finOptions = false;
-		int i = 0;
-		while (i < args.length && ! finOptions) {
-			String arg = args[i];
 
-			faire(acces, finOptions);
+		int i = 0;
+		while (i < arguments.length) {
+			if (i+1 < arguments.length) {
+			Action.faire(config, arguments[i], arguments[++i]);
+			
+			} else if (arguments[i] == "-C" || arguments[i] == "-P") {
+				Action.faire(config, arguments[i], 0);
+			}
 
 			i++;
 		}
@@ -24,7 +29,9 @@ public class CLIClassiqueKP {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(configuration(args));
+
+		System.out.println(analyser(args));
+
 	}
 }
 

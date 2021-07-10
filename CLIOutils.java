@@ -5,9 +5,9 @@ public class CLIOutils {
     String descriptionIndice;
     String descriptionMode;
     
-    public static fromClass(Configuration myConf) {
+    public static CLIClassique fromClass(Configuration myConf) {
 
-        CLIClassique myCLI;
+        CLIClassique myCLI = null;
         
         
 

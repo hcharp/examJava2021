@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cli SYSTEM "cli.dtd">
+
+<!ELEMENT cli   (argument*)>
+<!ELEMENT argument  (acces*, nb)>
+<!ATTLIST argument acces(A|I|K|P|C)>
+<!ELEMENT nb(#PCDATA)>

@@ -192,8 +192,11 @@ Il faut un observateur avec Listener qui va réagir au clic de l'utilisateur.
 
 ### 6.1. Dans la classe CLIOutils, définir une méthode de classe fromClass qui retourne un objet de type CLI construit à partir du nom d’une classe de configuration en respectant les règles précédentes. On ne traitera pas les actions associées aux options.
 
+Voir fichier [CLIOutils](CLIOutils.java).
 
 ### 6.2. Expliquer comment on pourrait traiter les actions associées aux options.
+
+?????
 
 ---
 [retour en haut](#examjava2021)
@@ -201,6 +204,8 @@ Il faut un observateur avec Listener qui va réagir au clic de l'utilisateur.
 
 
 ### 7.1. Écrire une DTD telle que le document du listing 4 lui soit conforme.
+
+Voir fichier [CLI.dtd](CLI.dtd)
 
 
 ### 7.2. Produire un fichier XML conforme à la DTD précédente à partir d’un objet CLI.

@@ -141,25 +141,25 @@ On pourrait ajouter dans la classe CLIClassique un try catch except pour que ça
 
 ### 3.4. On veut afficher un message d’erreur à l’utilisateur si les valeurs de alpha, indice ou epsilon ne sont pas au bon format. Comment modifier ce programme pour obtenir ce résultat, sachant que le  message pourrait apparaître plusieurs fois si plusieurs erreurs sont commises par l’utilisateur ? Répondre directement sur le sujet.
 
-Voir fichier [CLIClassique](#CLIClassique.java).
+Voir fichier [CLIClassique](CLIClassique.java).
 
 ### 3.5. Ce programme contient encore des erreurs. Lesquelles ?
 
 ????
 
 ---
-[retour en haut](#examjava2021)
+[retour en haut](examjava2021)
 ## Exercice 4
 
 
 ### 4.1. Dessiner le diagramme de classe qui fait apparaître les éléments mentionnés dans les paragraphes précédents. Pour assurer la traçabilité entre le paragraphe et l’élément on mettra à côté de l’élément le numéro du paragraphe correspondant dans un cercle.
 
-Voir fichiers [DiagClass](#DiagClass.drawio) et [DiagClassImage](#DiagClass.png)
+Voir fichiers [DiagClass](DiagClass.drawio) et [DiagClassImage](DiagClass.png)
 
 
 ### 4.2. Écrire avec ce nouveau framework l’équivalent du programme du listing 3 en se limitant aux options K et P.
 
-Voir fichier [CLIClassiqueKP](#CLIClassiqueKP.java)
+Voir fichier [CLIClassiqueKP](CLIClassiqueKP.java)
 
 ### 4.3. Indiquer la structure de données de l’API des collections à utiliser pour stocker les options d’une CLI. La réponse doit être justifiée.
 

@@ -163,7 +163,7 @@ Voir fichier [CLIClassiqueKP](CLIClassiqueKP.java)
 
 ### 4.3. Indiquer la structure de données de l’API des collections à utiliser pour stocker les options d’une CLI. La réponse doit être justifiée.
 
-Pour stocker les options d'une CLI, il faut pouvoir ajouter des éléments.
+Une liste permet d'ajouter des éléments. Une ArrayList permet un accès direct et plus efficace aux données.
 
 ---
 [retour en haut](#examjava2021)
@@ -172,18 +172,26 @@ Pour stocker les options d'une CLI, il faut pouvoir ajouter des éléments.
 
 ### 5.1. Expliquer comment produire la vue.
 
-Il nous faut :
-- une fenêtre (JFrame)
-- des boutons(JButton)
+La fenêtre sert de racine (JFrame), on y lie les éléments suivants :
+
+Un premier panneau (JPanel) contient :
+- des boutons(JButton) Creuse et Pleine sur une ligne avec FlowLayout.CENTER pour que les deux boutons soient sur la même ligne, centrés
+
+Un deuxième panneau avec BoxLayout pour que les éléments soient alignés les uns avec les autres : 
 - des descriptions textuelles (JLabel)
 - des champs textes éditables (JTextField)
+- des boutons
+
+Un troisième et dernier panneau : 
 - une barre d'état (JLabel)
 
-Sur 5 lignes et 3 colonnes.
+
 
 ### 5.2. Expliquer comment faire pour que « -C » soit ajouté en bas quand l’utilisateur clique sur « Creuse (C) ».
 
 Il faut un observateur avec Listener qui va réagir au clic de l'utilisateur.
+On récupère tout ce qui est écrit (chaîne a) dans la barre d'état, et on concatène cette chaîne avec la chaîne "-C", puis on remplace dans la barre d'état :
+a = a + "-C";
 
 ---
 [retour en haut](#examjava2021)

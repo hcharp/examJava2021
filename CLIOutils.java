@@ -13,4 +13,12 @@ public class CLIOutils {
 
         return myCLI;
     }
+
+    public CLIClassique fromClass(Configuration myConf) {
+
+        myCLI = new CLIClassique;
+
+        myCli.options.add(myConf.mode, myConf.description, myConf.valeur, myConf.acces);
+
+    }
 }

@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c20834e8-b4fa-4178-9759-1990c1c42ae9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CLI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CLIClassiqueKP.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIClassiqueKP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLIClassiqueKP.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIKP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CLIOutils.java" beforeDir="false" afterPath="$PROJECT_DIR$/CLIOutils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DiagClass.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/DiagClass.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DiagClass.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Option.java" beforeDir="false" afterPath="$PROJECT_DIR$/Option.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

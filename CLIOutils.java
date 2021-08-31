@@ -1,24 +1,22 @@
 public class CLIOutils {
-
-    String descriptionAlpha;
-    String descriptionEpsilon;
-    String descriptionIndice;
-    String descriptionMode;
     
-    public static CLIClassique fromClass(Configuration myConf) {
+    public static CLI fromClass(Configuration myConf) {
 
-        CLIClassique myCLI = null;
-        
-        
+        CLIClassique myCLI;
+        myCLI.alpha = Option('A',"Valeur de alpha", myConf.alpha);
+        myCLI.epsilon = Option('E',"Valeur de la précision à atteindre", myConf.epsilon);
+        myCLI.indice = Option('K',"Valeur de l'indice à calculer", myConf.indice);
+
+        if (myConf.mode == Mode.Creuse)
+        {
+            myCLI.mode = Option('C',"Matrice mode creuse");
+        }
+        else
+        {
+            myCLI.mode = Option('P',"Matrice mode pleine");
+        }
 
         return myCLI;
     }
 
-    public CLIClassique fromClass(Configuration myConf) {
-
-        myCLI = new CLIClassique;
-
-        myCli.options.add(myConf.mode, myConf.description, myConf.valeur, myConf.acces);
-
-    }
 }

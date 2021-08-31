@@ -1,9 +1,10 @@
 public class Option {
 
-	public Option(String description, Object valeur, Char acces) {
+	public Option(char acces, String description, Object valeur) {
+		this.acces = acces;
 		this.description = description;
 		this.valeur = valeur; // pas si pleine/creuse
-		this.acces = acces;
+
 	}
 
 	public Option(String description, Char acces) {

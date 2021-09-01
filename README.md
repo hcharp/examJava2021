@@ -159,7 +159,7 @@ Voir fichiers [DiagClass](DiagClass.drawio) et [DiagClassImage](DiagClass.png)
 
 ### 4.2. Écrire avec ce nouveau framework l’équivalent du programme du listing 3 en se limitant aux options K et P.
 
-Voir fichier [CLIClassiqueKP](CLIClassiqueKP.java)
+Voir fichier [CLIKP](CLIKP.java)
 
 ### 4.3. Indiquer la structure de données de l’API des collections à utiliser pour stocker les options d’une CLI. La réponse doit être justifiée.
 

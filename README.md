@@ -154,7 +154,7 @@ Voir fichier [CLIClassique](CLIClassique.java).
 
 ### 4.1. Dessiner le diagramme de classe qui fait apparaître les éléments mentionnés dans les paragraphes précédents. Pour assurer la traçabilité entre le paragraphe et l’élément on mettra à côté de l’élément le numéro du paragraphe correspondant dans un cercle.
 
-Voir fichiers [DiagClass](DiagClass.drawio), à ouvrir avec Drawio.
+Voir fichiers [DiagClass](DiagClass.drawio), à ouvrir avec Drawio, ou la version image disponible sur : [DiagClassImg](DiagClassImg.png).
 
 ### 4.2. Écrire avec ce nouveau framework l’équivalent du programme du listing 3 en se limitant aux options K et P.
 

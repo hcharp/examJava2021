@@ -203,9 +203,13 @@ Voir fichier [CLIOutils](CLIOutils.java).
 
 ### 6.2. Expliquer comment on pourrait traiter les actions associées aux options.
 
-Dans la classe Action, on a la méthode faire, qui traite les actions selon les accès.
-On pourrait interroger myConf pour savoir quel accès est concerné, et faire deux cas : celui où l'accès est C ou P, donc pas de valeur, ou non.
-Et on appelle la méthode de classe dans CLIOutils.
+Dans la classe Action, on a la méthode faire, qui indique ce qui est effectué selon les accès.
+En interrogeant myConf, on sait de quel accès il s'agit.
+Il y a alors deux cas :
+- l'accès est C ou P -> il n'y a donc pas de valeur à ajouter
+- l'accès n'est pas C ou P -> on ajoute une valeur
+
+Une fois qu'on sait ce qu'on doit effectuer, on appelle la méthode de classe fromClass dans CLIOutils.
 
 ---
 [retour en haut](#examjava2021)
@@ -223,4 +227,4 @@ Voir fichier [anotherCLI.xml](anotherCLI.xml)
 
 ### 7.3. La définition des arguments de la ligne de commande pourrait se faire directement sous la forme d’un fichier XML comme le précédent. Expliquer comment il pourrait être exploité en Java pour produire un objet CLI.
 
-Il suffit de parser un fichier XML avec SAX : en effet, SAX reconnaît la syntaxe XML et peut le convertir en JDOM, un DOM adapté à Java (lisibilité, utilisation des bibliothèques, ...). Il faut ensuite modifier le code pour actualiser la valeur des paramètres.
+Il suffit de parser un fichier XML avec SAX (Simple API for XML): en effet, SAX reconnaît la syntaxe XML et peut le convertir en JDOM, un DOM adapté à Java (lisibilité, utilisation des bibliothèques, ...). Il faut ensuite modifier le code pour actualiser la valeur des paramètres.

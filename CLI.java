@@ -24,7 +24,7 @@ public class CLI {
 				case "-E": // Valeur de la précision à atteindre
 				try {
 					config.epsilon = Double.parseDouble(args[++i]);
-					epsilon = = new Option('E',"Valeur de la précision à atteindre", config.epsilon);
+					epsilon = new Option('E',"Valeur de la précision à atteindre", config.epsilon);
 				} catch (Exception e) {
 					System.out.println("Pas le bon type.");
 				}

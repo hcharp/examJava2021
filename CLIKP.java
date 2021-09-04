@@ -30,6 +30,7 @@ public class CLIKP {
 					if (! finOptions) {
 						System.out.println("Option inconnue : " + arg);
 					}
+					break;
 			}
 			i++;
 		}

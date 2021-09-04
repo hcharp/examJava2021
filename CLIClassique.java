@@ -39,6 +39,7 @@ public class CLIClassique {
 					if (! finOptions) {
 						System.out.println("Option inconnue : " + arg);
 					}
+					break;
 			}
 			i++;
 		}

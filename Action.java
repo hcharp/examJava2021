@@ -2,7 +2,6 @@ public class Action {
 
 	public static void faire(Configuration config, String acces, Object valeur) {
 		
-
 		switch (acces) {
 			case "-K": // Valeur de l'indice à calculer
 				try {

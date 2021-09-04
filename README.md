@@ -139,7 +139,7 @@ En même temps, 15.5, c'est pas vraiment un entier, mais un float (d'où le Numb
 On ne peut pas vérifier que c'est un entier parce que c'est déjà compilé quand on donne l'argument qui n'est pas castable en entier.
 On pourrait ajouter dans la classe CLIClassique un try catch except pour que ça ne fasse pas tout planter dans l'application mais juste afficher une erreur plus _user experience_.
 
-### 3.4. On veut afficher un message d’erreur à l’utilisateur si les valeurs de alpha, indice ou epsilon ne sont pas au bon format. Comment modifier ce programme pour obtenir ce résultat, sachant que le  message pourrait apparaître plusieurs fois si plusieurs erreurs sont commises par l’utilisateur ? Répondre directement sur le sujet.
+### 3.4. On veut afficher un message d’erreur à l’utilisateur si les valeurs de `alpha`, `indice` ou `epsilon` ne sont pas au bon format. Comment modifier ce programme pour obtenir ce résultat, sachant que le  message pourrait apparaître plusieurs fois si plusieurs erreurs sont commises par l’utilisateur ? Répondre directement sur le sujet.
 
 Voir fichier [CLIClassique](CLIClassique.java).
 
@@ -160,7 +160,7 @@ Voir fichiers [DiagClass](DiagClass.drawio), à ouvrir avec Drawio, ou la versio
 
 Voir fichier [CLIKP](CLIKP.java)
 
-### 4.3. Indiquer la structure de données de l’API des collections à utiliser pour stocker les options d’une CLI. La réponse doit être justifiée.
+### 4.3. Indiquer la structure de données de l’API des collections à utiliser pour stocker les options d’une `CLI`. La réponse doit être justifiée.
 
 Une liste permet d'ajouter des éléments. Une ArrayList permet un accès direct et plus efficace aux données.
 
@@ -176,12 +176,12 @@ La fenêtre sert de racine (JFrame), on y lie les éléments suivants :
 Un premier panneau (JPanel) contient :
 - des boutons(JButton) Creuse et Pleine sur une ligne avec FlowLayout.CENTER pour que les deux boutons soient sur la même ligne, centrés
 
-Un deuxième panneau avec BoxLayout pour que les éléments soient alignés les uns avec les autres : 
+Un deuxième panneau (JPanel) avec BoxLayout pour que les éléments soient alignés les uns avec les autres : 
 - des descriptions textuelles (JLabel)
 - des champs textes éditables (JTextField)
 - des boutons
 
-Un troisième et dernier panneau : 
+Un troisième et dernier panneau (JPanel): 
 - une barre d'état (JLabel)
 
 
@@ -189,15 +189,15 @@ Un troisième et dernier panneau :
 ### 5.2. Expliquer comment faire pour que « -C » soit ajouté en bas quand l’utilisateur clique sur « Creuse (C) ».
 
 Il faut un observateur avec Listener qui va réagir au clic de l'utilisateur.
-On récupère tout ce qui est écrit (chaîne a) dans la barre d'état, et on concatène cette chaîne avec la chaîne "-C", puis on remplace dans la barre d'état :
-a = a + "-C";
+On récupère tout ce qui est écrit (chaîne 'a' par exemple) dans la barre d'état, et on concatène cette chaîne avec la chaîne "-C", puis on remplace dans la barre d'état :
+`a = a + "-C";`
 
 ---
 [retour en haut](#examjava2021)
 ## Exercice 6
 
 
-### 6.1. Dans la classe CLIOutils, définir une méthode de classe fromClass qui retourne un objet de type CLI construit à partir du nom d’une classe de configuration en respectant les règles précédentes. On ne traitera pas les actions associées aux options.
+### 6.1. Dans la classe CLIOutils, définir une méthode de classe `fromClass` qui retourne un objet de type `CLI` construit à partir du nom d’une classe de configuration en respectant les règles précédentes. On ne traitera pas les actions associées aux options.
 
 Voir fichier [CLIOutils](CLIOutils.java).
 

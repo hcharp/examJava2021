@@ -126,7 +126,7 @@ Donc il va falloir ajouter une surcharge :
 
 ### 3.1. Écrire une classe de test JUnit qui ne fait qu’un seul test : l’exemple du sujet.
 
-Voir fichier [CLIClassiqueTest](#CLIClassiqueTest.java).
+Voir fichier [CLIClassiqueTest](CLIClassiqueTest.java).
 
 ### 3.2. Voici le résultat que l’on obtient quand on exécute : java CLIClassique -K 15.5 -P 
 __Que peut-on en déduire sur le programme ?__

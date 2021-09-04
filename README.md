@@ -219,7 +219,7 @@ Voir fichier [CLI.dtd](CLI.dtd)
 
 ### 7.2. Produire un fichier XML conforme à la DTD précédente à partir d’un objet CLI.
 
-Voir fichier [anotherCLI.xml](anotherCLI.xml))
+Voir fichier [anotherCLI.xml](anotherCLI.xml)
 
 ### 7.3. La définition des arguments de la ligne de commande pourrait se faire directement sous la forme d’un fichier XML comme le précédent. Expliquer comment il pourrait être exploité en Java pour produire un objet CLI.
 
